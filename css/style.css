@@ -8,11 +8,16 @@ body {
   color: white;
   overflow-x: hidden;
 }
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
 
 img {
   display: block;
   max-width: 100%;
-  width: 130px;
+  
 }
 
 .header {
@@ -93,6 +98,19 @@ img {
   color: white;
   font-size: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  width: 180px;
+}
+.form-cta button::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 19px;
+  background: url("../img/seta.svg");
+  margin-left: 15px;
+}
+.form-cta button:hover {
+  background: #f40612; 
 }
 
 .main p {
@@ -113,4 +131,29 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
+}
+section{
+  background: black;
+  padding: 4rem 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
+
+.img-tv {
+position: relative;
+}
+.img-tv img {
+  position: relative;
+  z-index: 1;
+}
+
+.video-tv {
+  position: absolute;
+  width: 400px;
+  top: 80px;
+  left: 70px;
+
 }
