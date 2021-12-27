@@ -7,7 +7,10 @@ body {
   font-family: sans-serif;
   color: white;
   overflow-x: hidden;
+
+
 }
+
 .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -17,7 +20,13 @@ body {
 img {
   display: block;
   max-width: 100%;
-  
+
+}
+
+.log {
+  width: 130px;
+  display: block;
+
 }
 
 .header {
@@ -29,6 +38,8 @@ img {
   top: 28px;
   left: 56px;
   text-align: center;
+  display: flex;
+
 }
 
 .header a {
@@ -46,30 +57,31 @@ img {
   text-align: center;
 }
 
+
 .main {
   padding-top: 4rem;
   height: 785px;
-  background: url("../img/fundonetflix.jpg") center;
+  background: url("../img/bg.jpg") center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   box-sizing: border-box;
-  width: 105%;
-  margin-bottom: 5px;
+  padding: 150px;
 }
 
 .main-child {
   z-index: 1;
   display: grid;
   justify-items: center;
-  
+
+
 }
 
 .main h1 {
   font-size: 48px;
-  max-width: 510px;
+  max-width: 650px;
 }
 
 .main span {
@@ -101,16 +113,18 @@ img {
   cursor: pointer;
   width: 180px;
 }
+
 .form-cta button::after {
   content: "";
   display: inline-block;
   width: 10px;
-  height: 19px;
+  height: 20px;
   background: url("../img/seta.svg");
   margin-left: 15px;
 }
+
 .form-cta button:hover {
-  background: #f40612; 
+  background: #f40612;
 }
 
 .main p {
@@ -120,41 +134,45 @@ img {
 
 .gradient {
   background: rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0) 60%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+
 }
-section{
+
+section {
   background: black;
-  padding: 4rem 0;
+  padding: 3rem 0;
   border-top: 8px solid #222;
- 
+
 }
+
 section h1 {
   font-size: 50px;
   margin-bottom: 16px;
 }
+
 section p {
   font-size: 26px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
-  
+
 }
 
 .img-tv {
-position: relative;
+  position: relative;
 }
+
 .img-tv img {
   position: relative;
   z-index: 1;
@@ -167,22 +185,46 @@ position: relative;
   left: 70px;
 
 }
-.download .grid > div:first-child{
+
+.download .grid>div:first-child {
   order: 2;
 }
+
 .download .img-tv {
   order: 1;
 }
+
 .device .video-tv {
   width: 340px;
   top: 45px;
   left: 100px;
 }
-.infantil .grid > div:first-child{
+
+.infantil .grid>div:first-child {
   order: 2;
 }
+
 .infantil .img-tv {
   order: 1;
   width: 526px;
-  
+
+}
+
+.footer .form-cta {
+  margin-top: 0;
+}
+
+.footer {
+  padding: 4rem 0 2rem 0;
+  border-top: 8px solid #222;
+  background: black;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.footer p {
+  margin-top: 2rem;
+  color: #757575;
+  font-size: 13px;
 }
